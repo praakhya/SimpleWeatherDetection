@@ -1,0 +1,20 @@
+#title
+{
+    color: #30534c
+}
+#readings {
+    padding: 5px;
+    border-radius: 5px;
+}
+#readings:nth-child(2)
+{
+    background-color: #CEEDC7;
+}
+#head {
+    padding: 2px;
+    background-color: #86C8BC;
+}
+#data
+{
+    padding: 2px;
+}

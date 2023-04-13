@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather Report</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" type = "text/css" href="{{ url_for('.static', filename='css/mainStyles.css') }}">
+</head>
+<body>
+    <h1 id="title">Weather Report</h1>
+    <table id="readings">
+        <tr>
+            {% for item in headings %}
+                <th id="head">{{item}}</th>
+            {% endfor %}
+        <tr>
+        {% for item in readings %}
+            <tr>
+                {% for head in headings %}
+                    <td id="data">{{ item[head] }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
